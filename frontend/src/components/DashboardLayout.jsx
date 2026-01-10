@@ -2,12 +2,12 @@ import { useAuth } from "../context/AuthContext";
 import { useNavigate, useLocation } from "react-router-dom";
 import {
   LayoutDashboard,
-  CheckSquare,
   User,
   LogOut,
   Menu,
   X,
   Sparkles,
+  Settings,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -24,7 +24,6 @@ const DashboardLayout = ({ children }) => {
 
   const navItems = [
     { icon: LayoutDashboard, label: "Dashboard", path: "/dashboard" },
-    { icon: CheckSquare, label: "Tasks", path: "/tasks" },
     { icon: User, label: "Profile", path: "/profile" },
   ];
 
@@ -55,7 +54,7 @@ const DashboardLayout = ({ children }) => {
               <Sparkles className="w-6 h-6 text-white" />
             </div>
             <span className="text-2xl font-bold bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
-              TaskFlow
+              Dashboard
             </span>
           </div>
         </div>
