@@ -31,7 +31,7 @@ const Profile = () => {
       <div className="bg-slate-800/50 backdrop-blur-xl rounded-2xl border border-slate-700 p-8">
         <div className="flex items-center gap-6 mb-8 pb-8 border-b border-slate-700">
           <div className="relative">
-            <div className="w-24 h-24 rounded-2xl bg-gradient-to-r from-violet-500 to-fuchsia-500 flex items-center justify-center text-white text-3xl font-bold shadow-lg shadow-violet-500/25">
+            <div className="w-24 h-24 rounded-2xl bg-linear-to-r from-violet-500 to-fuchsia-500 flex items-center justify-center text-white text-3xl font-bold shadow-lg shadow-violet-500/25">
               {user?.name?.charAt(0).toUpperCase()}
             </div>
             <button className="absolute -bottom-2 -right-2 p-2 bg-slate-700 rounded-xl text-gray-400 hover:text-white transition">
@@ -101,7 +101,7 @@ const Profile = () => {
           <button
             type="submit"
             disabled={loading}
-            className="flex items-center justify-center gap-2 w-full py-3 px-4 bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:from-violet-500 hover:to-fuchsia-500 text-white font-medium rounded-xl shadow-lg shadow-violet-500/25 transition-all disabled:opacity-50"
+            className="flex items-center justify-center gap-2 w-full py-3 px-4 bg-linear-to-r from-violet-600 to-fuchsia-600 hover:from-violet-500 hover:to-fuchsia-500 text-white font-medium rounded-xl shadow-lg shadow-violet-500/25 transition-all disabled:opacity-50"
           >
             {loading ? (
               <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
