@@ -149,7 +149,7 @@ const Dashboard = () => {
       },
       {
         label: "Active Users",
-        value: "1,429",
+        value: "12",
         change: "+8.2%",
         icon: Users,
         iconBg: "bg-blue-100",
